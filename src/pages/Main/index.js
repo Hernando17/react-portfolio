@@ -9,11 +9,6 @@ export default function Main() {
       <section id="hero">
         <h3>Welcome to Portfolio website</h3>
       </section>
-      <main>
-        <section id="about">
-          <h3>Portfolio</h3>
-        </section>
-      </main>
     </div>
   );
 }
