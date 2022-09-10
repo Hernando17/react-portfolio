@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  background-color: #222831;
+  width: 100%;
+  padding: 30px;
+}
+
+.navbar-item {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+}
+
+.navbar a {
+  color: #ffff;
+  font-size: 18px;
+}
+
+main {
+  padding: 10%;
+}
+
+#hero {
+  padding: 10%;
+  background-color: gray;
+}
+
+#about {
+  background-color: aqua;
+}
