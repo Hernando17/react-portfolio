@@ -1,12 +1,12 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
-import { Main } from "./pages";
+import Router from "./routers";
+import { motion, AnimatePresence } from "framer-motion";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Main />} />
-    </Routes>
+    <AnimatePresence exitBeforeEnter>
+      <Router />
+    </AnimatePresence>
   );
 }
 
