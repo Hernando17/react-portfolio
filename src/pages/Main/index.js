@@ -20,7 +20,7 @@ export default function Main() {
         >
           <div className="main-content">
             <h1 className="main-title">Welcome to my website</h1>
-            <p style={{ marginBottom: 12 }}>Find more about me</p>
+            <p style={{ marginBottom: 24 }}>Find more about me</p>
             <ButtonOutline name="About" onClick={() => navigate("/about")} />
           </div>
         </motion.div>

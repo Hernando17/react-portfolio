@@ -42,9 +42,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
-  padding: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
+  margin: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
   justify-content: space-between;
 }
 
@@ -94,6 +94,19 @@
   #main {
     margin-top: -30px;
     justify-content: center;
+  }
+
+  .main-title {
+    text-align: center;
+    font-size: 24px;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content p {
+    text-align: center;
+    font-size: 32;
   }
   .logo {
     width: 150px;
