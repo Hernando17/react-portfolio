@@ -1,3 +1,8 @@
+.margin-page {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 /* Navbar */
 .center {
   display: flex;
@@ -11,7 +16,7 @@
 }
 .navbar {
   display: flex;
-  position: absolute;
+  position: fixed;
   width: 50%;
   border-radius: 10px;
   align-items: center;
@@ -27,6 +32,7 @@
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  list-style: none;
 }
 
 .navbar ul.mobile {
@@ -78,12 +84,17 @@
 /* About Content */
 #about {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 5%;
   margin-left: 10%;
   margin-right: 10%;
+  align-items: center;
   justify-content: space-between;
   overflow-y: hidden;
+}
+
+.about-container {
+  padding-bottom: 10%;
 }
 
 .hero-container {
@@ -108,7 +119,11 @@
   display: flex;
   flex-direction: column;
   color: white;
-  width: 50%;
+  width: 70%;
+}
+
+.education-list {
+  margin-top: 12px;
 }
 
 @media screen and (max-width: 768px) {
@@ -135,8 +150,9 @@
 
   /* Main Responsive */
   #main {
-    margin-top: -30px;
+    flex-wrap: wrap-reverse;
     justify-content: center;
+    margin-top: -20px;
   }
 
   .main-title {
@@ -160,9 +176,21 @@
   }
 
   /* About Responsive */
+  .about-container {
+    padding-bottom: 40%;
+  }
+
   #about {
-    margin-top: -5%;
+    margin-top: -8%;
     align-items: center;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .about-title {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 36px;
   }
 
   .about-description {
