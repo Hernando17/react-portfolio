@@ -48,6 +48,11 @@
   cursor: pointer;
 }
 
+.navbar a:hover {
+  color: rgb(248, 152, 211);
+  transition: 0.5s;
+}
+
 /* Main Content */
 #main {
   display: flex;

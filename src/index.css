@@ -8,22 +8,20 @@
 }
 
 body {
-  background-image: url("./assets/img/background2.jpg");
+  /* background-image: url("./assets/img/background2.jpg"); */
+  /* background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-}
-
-/* body {
-  background-image: url("./assets/img/background.jpg");
+  background-size: cover; */
   background-image: linear-gradient(
     45deg,
     rgba(58, 50, 170, 0.933),
     rgb(255, 77, 231)
   );
   background-repeat: no-repeat;
-  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-} */
+}

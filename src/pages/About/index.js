@@ -23,14 +23,14 @@ export default function About() {
             <div className="about-content">
               <div className="about-description" style={{ marginTop: 24 }}>
                 <p>
-                  Hello, my name is Hernando. I'm currently work as Full Stack
-                  Developer, and usually code with PHP and Javascript. And also
-                  using ReactJs, React Native and Laravel for the Framework.
+                  Hello, my name is Hernando. I'm born in August 25, 2004 in
+                  Indonesia which mean I can speak Indonesia and little english.
+                  I'm currently work as Full Stack Developer, and focus on
+                  developing website and android application.
                 </p>
                 <p style={{ marginTop: 12 }}>
-                  I can also can operate Graphic Design and Video Editor
-                  software like Adobe Photoshop, Adobe Illustrator, and Adobe
-                  Premiere Pro.
+                  My hobbies are write some code, make some digital art and play
+                  video games
                 </p>
               </div>
             </div>
