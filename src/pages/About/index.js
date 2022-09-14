@@ -8,15 +8,16 @@ import AOS from "aos";
 export default function About() {
   React.useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
+      once: true,
     });
   }, []);
 
   return (
     <div className="about-container">
       <Navbar />
-      <section id="about">
-        <div data-aos="fade-right">
+      <section id="about" data-aos="fade-down">
+        <div>
           <div className="hero-container">
             <h1 className="about-title">About Me</h1>
             <div className="about-content">
@@ -39,23 +40,47 @@ export default function About() {
           <img src={foto2} style={{ borderRadius: 100 }} className="logo" />
         </div>
       </section>
-      <div className="margin-page">
-        <h2 style={{ color: "white" }}>Education</h2>
-        <div style={{ marginTop: 16, color: "white" }}>
-          <div className="education-list">
-            <h5>2019 - 2022</h5>
-            <p>SMK Multistudi High School</p>
-            <p>Vocational High School</p>
+      <div className="about-item margin-page">
+        <div data-aos="fade-right">
+          <div className="education-container">
+            <h2 style={{ color: "white" }}>Education</h2>
+            <div className="education-list">
+              <h5>2022 - 2025</h5>
+              <p>Universitas Internasional Batam</p>
+              <p>College</p>
+            </div>
+            <div className="education-list">
+              <h5>2019 - 2022</h5>
+              <p>SMK Multistudi High School</p>
+              <p>Vocational High School</p>
+            </div>
+            <div className="education-list">
+              <h5>2016 - 2019</h5>
+              <p>SMP Ananda Batam</p>
+              <p>Junior High School</p>
+            </div>
+            <div className="education-list">
+              <h5>2010 - 2016</h5>
+              <p>SD Ananda Batam</p>
+              <p>Elementary School</p>
+            </div>
           </div>
-          <div className="education-list">
-            <h5>2016 - 2019</h5>
-            <p>SMP Ananda Batam</p>
-            <p>Junior High School</p>
-          </div>
-          <div className="education-list">
-            <h5>2010 - 2016</h5>
-            <p>SD Ananda Batam</p>
-            <p>Elementary School</p>
+        </div>
+        <div data-aos="fade-right">
+          <div className="skills-container">
+            <h2 style={{ color: "white" }}>Skills</h2>
+            <div className="education-list">
+              <h5>Programming</h5>
+              <p>PHP, Javascript, Laravel, React Js, React Native</p>
+            </div>
+            <div className="education-list">
+              <h5>Graphic Design</h5>
+              <p>Adobe Photoshop, Adobe Illustrator</p>
+            </div>
+            <div className="education-list">
+              <h5>Video Editing</h5>
+              <p>Adobe Premiere Pro</p>
+            </div>
           </div>
         </div>
       </div>
