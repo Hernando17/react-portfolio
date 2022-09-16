@@ -1,6 +1,6 @@
 import React from "react";
 import "../../assets/css/style.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import {
   FaHome,
   FaUserAlt,
@@ -10,20 +10,36 @@ import {
 } from "react-icons/fa";
 
 export default function Navbar() {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   return (
     <div className="center">
       <nav className="navbar">
         <ul className="desktop">
           <li>
-            <a onClick={() => navigate(`/`)}>Main</a>
+            <a
+              className={location.pathname == "/" ? "active" : ""}
+              onClick={() => navigate(`/`)}
+            >
+              Main
+            </a>
           </li>
           <li>
-            <a onClick={() => navigate(`/about`)}>About</a>
+            <a
+              className={location.pathname == "/about" ? "active" : ""}
+              onClick={() => navigate(`/about`)}
+            >
+              About
+            </a>
           </li>
           <li>
-            <a onClick={() => navigate(`/contact`)}>Contact</a>
+            <a
+              className={location.pathname == "/contact" ? "active" : ""}
+              onClick={() => navigate(`/contact`)}
+            >
+              Contact
+            </a>
           </li>
           <li>
             <a>Career</a>

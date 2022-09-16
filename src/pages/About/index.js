@@ -14,12 +14,12 @@ export default function About() {
   }, []);
 
   return (
-    <div className="about-container">
+    <div className="about-container ">
       <Navbar />
       <section id="about" data-aos="fade-down">
         <div>
           <div className="hero-container">
-            <h1 className="about-title">About Me</h1>
+            <h1 className="title spacer">About Me</h1>
             <div className="about-content">
               <div className="about-description" style={{ marginTop: 24 }}>
                 <p>
