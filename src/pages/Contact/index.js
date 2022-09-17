@@ -13,11 +13,11 @@ export default function Contact() {
   }, []);
 
   return (
-    <section id="contact" data-aos="fade-right">
+    <section id="contact">
       <Navbar />
       <div className="contact-container">
         <h1 className="title">Contact</h1>
-        <div className="contact-description spacer">
+        <div className="contact-description" data-aos="fade-right">
           <div className="contact-item">
             <FaInstagram size={24} />
             <a

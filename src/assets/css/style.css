@@ -177,6 +177,18 @@
   color: white;
 }
 
+/* Career Content */
+.career-container {
+  margin: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.career-content {
+  margin-top: 32px;
+  color: white;
+}
+
 @media screen and (max-width: 768px) {
   .title {
     text-align: center;
@@ -257,5 +269,19 @@
   .skills-container {
     margin-top: 30px;
     margin-left: 0px;
+  }
+
+  /* Contact Responsive */
+  #contact {
+    margin-top: -8%;
+  }
+
+  .contact-description {
+    margin-top: 32px;
+  }
+
+  /* Career Responsive */
+  #career {
+    margin-top: -8%;
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
-import { Main, About, Contact } from "../pages";
+import { Routes, Route } from "react-router-dom";
+import { Main, About, Contact, Career, Project } from "../pages";
 
 export default function Router() {
   return (
@@ -8,6 +8,8 @@ export default function Router() {
       <Route path="/" element={<Main />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/career" element={<Career />} />
+      <Route path="/project" element={<Project />} />
     </Routes>
   );
 }

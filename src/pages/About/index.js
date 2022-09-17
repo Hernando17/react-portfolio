@@ -1,7 +1,6 @@
 import React from "react";
 import "../../assets/css/style.css";
 import { Navbar } from "../../components";
-import { motion } from "framer-motion";
 import foto2 from "../../assets/img/foto2.jpg";
 import AOS from "aos";
 
@@ -18,21 +17,19 @@ export default function About() {
       <Navbar />
       <section id="about" data-aos="fade-down">
         <div>
-          <div className="hero-container">
-            <h1 className="title spacer">About Me</h1>
-            <div className="about-content">
-              <div className="about-description" style={{ marginTop: 24 }}>
-                <p>
-                  Hello, my name is Hernando. I'm born in August 25, 2004 in
-                  Indonesia which mean I can speak Indonesia and little english.
-                  I'm currently work as Full Stack Developer, and focus on
-                  developing website and android application.
-                </p>
-                <p style={{ marginTop: 12 }}>
-                  My hobbies are write some code, make some digital art and play
-                  video games
-                </p>
-              </div>
+          <h1 className="title spacer">About Me</h1>
+          <div className="about-content">
+            <div className="about-description" style={{ marginTop: 24 }}>
+              <p>
+                Hello, my name is Hernando. I'm born in August 25, 2004 in
+                Indonesia which mean I can speak Indonesia and little english.
+                I'm currently work as Full Stack Developer, and focus on
+                developing website and android application.
+              </p>
+              <p style={{ marginTop: 12 }}>
+                My hobbies are write some code, make some digital art and play
+                video games
+              </p>
             </div>
           </div>
         </div>

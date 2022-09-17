@@ -19,7 +19,7 @@ export default function Navbar() {
         <ul className="desktop">
           <li>
             <a
-              className={location.pathname == "/" ? "active" : ""}
+              className={location.pathname === "/" ? "active" : ""}
               onClick={() => navigate(`/`)}
             >
               Main
@@ -27,7 +27,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              className={location.pathname == "/about" ? "active" : ""}
+              className={location.pathname === "/about" ? "active" : ""}
               onClick={() => navigate(`/about`)}
             >
               About
@@ -35,14 +35,19 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              className={location.pathname == "/contact" ? "active" : ""}
+              className={location.pathname === "/contact" ? "active" : ""}
               onClick={() => navigate(`/contact`)}
             >
               Contact
             </a>
           </li>
           <li>
-            <a>Career</a>
+            <a
+              className={location.pathname === "/career" ? "active" : ""}
+              onClick={() => navigate(`/career`)}
+            >
+              Career
+            </a>
           </li>
           <li>
             <a>Project</a>
@@ -50,22 +55,34 @@ export default function Navbar() {
         </ul>
         <ul className="mobile">
           <li>
-            <a onClick={() => navigate(`/`)}>
+            <a
+              className={location.pathname === "/" ? "active" : ""}
+              onClick={() => navigate(`/`)}
+            >
               <FaHome />
             </a>
           </li>
           <li>
-            <a onClick={() => navigate(`/about`)}>
+            <a
+              className={location.pathname === "/about" ? "active" : ""}
+              onClick={() => navigate(`/about`)}
+            >
               <FaUserAlt />
             </a>
           </li>
           <li>
-            <a onClick={() => navigate(`/contact`)}>
+            <a
+              className={location.pathname === "/contact" ? "active" : ""}
+              onClick={() => navigate(`/contact`)}
+            >
               <FaPhoneAlt />
             </a>
           </li>
           <li>
-            <a>
+            <a
+              className={location.pathname === "/career" ? "active" : ""}
+              onClick={() => navigate(`/career`)}
+            >
               <FaUserTie />
             </a>
           </li>
