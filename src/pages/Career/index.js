@@ -13,12 +13,12 @@ export default function Career() {
 
   const data = [
     {
-      time: "2022 - Present",
+      time: "July 2022 - Present",
       company: "PT Mitra Kuadran Teknologi",
       position: "Full Stack Developer",
     },
     {
-      time: "2020 - 2021",
+      time: "October 2020 - March 2021 (6 Months)",
       company: "PT Mitra Kuadran Teknologi",
       position: "Student Intern",
     },

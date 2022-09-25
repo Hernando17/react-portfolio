@@ -1,6 +1,6 @@
 import React from "react";
 import "../../assets/css/style.css";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 import {
   FaHome,
   FaUserAlt,
@@ -18,78 +18,80 @@ export default function Navbar() {
       <nav className="navbar">
         <ul className="desktop">
           <li>
-            <a
-              className={location.pathname === "/" ? "active" : ""}
-              onClick={() => navigate(`/`)}
-            >
+            <Link className={location.pathname === "/" ? "active" : ""} to="/">
               Main
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
+              to="/about"
               className={location.pathname === "/about" ? "active" : ""}
-              onClick={() => navigate(`/about`)}
             >
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
+              to="/contact"
               className={location.pathname === "/contact" ? "active" : ""}
-              onClick={() => navigate(`/contact`)}
             >
               Contact
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
+              to="/career"
               className={location.pathname === "/career" ? "active" : ""}
-              onClick={() => navigate(`/career`)}
             >
               Career
-            </a>
+            </Link>
           </li>
           <li>
-            <a>Project</a>
+            <Link
+              to="/project"
+              className={location.pathname === "/project" ? "active" : ""}
+            >
+              Project
+            </Link>
           </li>
         </ul>
         <ul className="mobile">
           <li>
-            <a
-              className={location.pathname === "/" ? "active" : ""}
-              onClick={() => navigate(`/`)}
-            >
+            <Link className={location.pathname === "/" ? "active" : ""} to="/">
               <FaHome />
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className={location.pathname === "/about" ? "active" : ""}
-              onClick={() => navigate(`/about`)}
+              to="/about"
             >
               <FaUserAlt />
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className={location.pathname === "/contact" ? "active" : ""}
-              onClick={() => navigate(`/contact`)}
+              to="/contact"
             >
               <FaPhoneAlt />
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className={location.pathname === "/career" ? "active" : ""}
-              onClick={() => navigate(`/career`)}
+              to="/career"
             >
               <FaUserTie />
-            </a>
+            </Link>
           </li>
           <li>
-            <a>
+            <Link
+              to="/project"
+              className={location.pathname === "/project" ? "active" : ""}
+            >
               <FaRegFileCode />
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
