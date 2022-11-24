@@ -191,31 +191,43 @@
 
 /* Project Content */
 .project-container {
-  margin: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
+  max-width: 1400px;
+  background-color: aqua;
+  margin: 0 auto;
+
+  .project-content {
+    gap: 1%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    background-color: gray;
+    justify-content: flex-start;
+    
+
+
+      .project-card {
+        padding: 12px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        color: white;
+      }
+    }
+  
+
 }
 
-.project-card {
-  display: flex;
-  padding: 12px;
-  border-radius: 10px;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  flex-direction: column;
-  color: white;
-}
 
-.project-content {
-  margin-top: 32px;
-}
+
+
 
 .project-image {
-  width: 200px;
+  width: 100%;
   border-radius: 4px;
   margin-bottom: 4px;
 }
