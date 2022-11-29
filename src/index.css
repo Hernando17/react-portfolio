@@ -18,8 +18,14 @@ body {
   background-size: cover; */
   background-image: linear-gradient(
     45deg,
-    rgba(58, 50, 170, 0.933),
-    rgb(255, 77, 231)
+    /* rgba(58, 50, 170, 0.933),
+    rgb(255, 77, 231) */
+
+        rgb(38, 3, 133),
+    rgba(7, 147, 212, 0.933)
+
+    /* rgb(170, 65, 39),
+    rgba(23, 93, 158, 0.933) */
   );
   background-repeat: no-repeat;
   background-attachment: fixed;
