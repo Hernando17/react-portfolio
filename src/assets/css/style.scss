@@ -191,9 +191,9 @@
 
 /* Project Content */
 .project-container {
-  max-width: 1400px;
-  background-color: aqua;
-  margin: 0 auto;
+  margin: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 
   .project-content {
     gap: 1%;
@@ -202,10 +202,7 @@
     width: 100%;
     flex-wrap: wrap;
     margin-top: 32px;
-    background-color: gray;
     justify-content: flex-start;
-    
-
 
       .project-card {
         padding: 12px;
@@ -216,15 +213,12 @@
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
         color: white;
+        margin-bottom: 2%;
       }
     }
   
 
 }
-
-
-
-
 
 .project-image {
   width: 100%;
@@ -326,5 +320,36 @@
   /* Career Responsive */
   #career {
     margin-top: -8%;
+  }
+
+  // Project Responsive
+  .project-container {
+    margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+  
+    .project-content {
+      gap: 2%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+      flex-wrap: wrap;
+      margin-top: 32px;
+      justify-content: flex-start;
+  
+        .project-card {
+          padding: 12px;
+          border-radius: 10px;
+          background-color: rgba(255, 255, 255, 0.2);
+          border-radius: 10px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(5px);
+          -webkit-backdrop-filter: blur(5px);
+          color: white;
+          margin-bottom: 2%;
+        }
+      }
+    
+  
   }
 }
