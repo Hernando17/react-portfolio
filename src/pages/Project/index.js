@@ -2,73 +2,34 @@ import React from "react";
 import { Navbar } from "../../components";
 import "../../assets/css/style.scss";
 import Telefon from "../../assets/img/project/Telefon.png";
+import { project } from "../../resources/project";
 
 export default function Project() {
-    const data = [
-        {
-            name: "Telefon",
-            language: [
-                {
-                    name: "Laravel",
-                },
-                {
-                    name: "PHP",
-                },
-                {
-                    name: "Bootstrap",
-                },
-                {
-                    name: "MySQL",
-                },
-            ],
-        },
-    ];
-
     return (
         <div>
             <Navbar />
             <div className="project-container">
                 <h1 className="title">Project</h1>
                 <div className="project-content">
-                    <div className="project-card">
-                        <img src={Telefon} className="project-image" />
-                        <p>Telefon</p>
-                    </div>
-
-                    <div className="project-card">
-                        <img src={Telefon} className="project-image" />
-                        <p>Telefon</p>
-                    </div>
-
-                    <div className="project-card">
-                        <img src={Telefon} className="project-image" />
-                        <p>Telefon</p>
-                    </div>
-
-                    <div className="project-card">
-                        <img src={Telefon} className="project-image" />
-                        <p>Telefon</p>
-                    </div>
-
-                    <div className="project-card">
-                        <img src={Telefon} className="project-image" />
-                        <p>Telefon</p>
-                    </div>
-
-                    <div className="project-card">
-                        <img src={Telefon} className="project-image" />
-                        <p>Telefon</p>
-                    </div>
-
-                    <div className="project-card">
-                        <img src={Telefon} className="project-image" />
-                        <p>Telefon</p>
-                    </div>
-
-                    <div className="project-card">
-                        <img src={Telefon} className="project-image" />
-                        <p>Telefon</p>
-                    </div>
+                    {project.map((data, index) => (
+                        <div className="project-card" key={index}>
+                            <img src={Telefon} className="project-image" />
+                            <div className="card-text">
+                                <p>{data.name}</p>
+                                <div
+                                    className="project-category"
+                                    style={{
+                                        backgroundColor:
+                                            data.category == "Website"
+                                                ? "rgb(236, 61, 61)"
+                                                : "blue",
+                                    }}
+                                >
+                                    <p>{data.category}</p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
