@@ -22,7 +22,9 @@ export default function Project() {
                                         backgroundColor:
                                             data.category == "Website"
                                                 ? "rgb(236, 61, 61)"
-                                                : "blue",
+                                                : data.category == "Mobile App"
+                                                ? "blue"
+                                                : "orange",
                                     }}
                                 >
                                     <p>{data.category}</p>

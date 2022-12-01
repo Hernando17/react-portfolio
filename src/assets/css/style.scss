@@ -1,12 +1,12 @@
 @import "./partials/animation.scss";
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -41,10 +41,14 @@ body {
         content: "";
         bottom: 100px;
         right: 0;
-        width: 200px;
-        height: 200px;
-        background-color: aqua;
-        filter: blur(70px);
+        width: 800px;
+        height: 800px;
+        border-radius: 1000px;
+        background-color: rgb(85, 19, 19);
+        opacity: 60%;
+        filter: blur(200px);
+        z-index: -100;
+        animation: breathing 5s ease-out infinite normal;
     }
 }
 
@@ -57,9 +61,9 @@ body {
     font-size: 42px;
     color: white;
 
-    &:hover {
-        animation: rubberband 1000ms;
-    }
+    // &:hover {
+    //     animation: rubberband 1000ms;
+    // }
 }
 
 /* Navbar */
@@ -125,6 +129,7 @@ body {
         width: 100%;
         height: 100%;
         background: white;
+        opacity: 50%;
         filter: blur(25px);
     }
 }
@@ -138,6 +143,11 @@ body {
     margin-right: 10%;
     justify-content: space-between;
     overflow-y: hidden;
+}
+
+.main-title {
+    font-size: 64px;
+    color: white;
 }
 
 .main-content {
@@ -264,6 +274,7 @@ body {
     margin-right: 10%;
 
     .project-content {
+        margin-top: 32px;
         gap: 1%;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -279,6 +290,7 @@ body {
             backdrop-filter: blur(5px);
             -webkit-backdrop-filter: blur(5px);
             color: white;
+            margin-bottom: 12px;
         }
 
         .card-text {
@@ -346,6 +358,12 @@ body {
         justify-content: center;
         margin-top: -20px;
     }
+
+    .main-title {
+        text-align: center;
+        font-size: 36px;
+    }
+
     .main-content {
         display: flex;
         flex-direction: column;
@@ -416,6 +434,10 @@ body {
             flex-wrap: wrap;
             margin-top: 32px;
             justify-content: flex-start;
+
+            .project-card {
+                margin-bottom: 0px;
+            }
         }
     }
 }

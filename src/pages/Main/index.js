@@ -19,8 +19,12 @@ export default function Main() {
                     transition={{ transition: { duration: 1 } }}
                 >
                     <div className="main-content">
-                        <h1 className="title">Welcome to my website</h1>
-                        <p style={{ marginBottom: 20 }}>Find more about me</p>
+                        <h1 className="main-title">
+                            HELLO THERE, MY NAME IS HERNANDO
+                        </h1>
+                        <p style={{ marginBottom: 20, fontSize: 24 }}>
+                            Find more about me
+                        </p>
                         <ButtonOutline
                             name="About"
                             onClick={() => navigate("/about")}

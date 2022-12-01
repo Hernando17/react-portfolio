@@ -31,7 +31,7 @@ export default function About() {
                                 website and android application.
                             </p>
                             <p style={{ marginTop: 12 }}>
-                                My hobbies are write some code, make some
+                                My hobbies are write some code, makes some
                                 digital art and play video games
                             </p>
                         </div>
