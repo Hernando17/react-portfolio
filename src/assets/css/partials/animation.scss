@@ -33,7 +33,7 @@
 
 @keyframes breathing {
     from {
-        transform: scale(0.9);
+        transform: scale(0.5);
     }
 
     50% {
@@ -41,6 +41,6 @@
     }
 
     to {
-        transform: scale(0.9);
+        transform: scale(0.5);
     }
 }
