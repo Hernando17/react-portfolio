@@ -3,14 +3,24 @@ import { Navbar } from "../../components";
 import "../../assets/css/style.scss";
 import Telefon from "../../assets/img/project/Telefon.png";
 import { project } from "../../resources/project";
+import AOS from "aos";
 
 export default function Project() {
+  React.useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <div>
       <Navbar />
       <div className="project-container">
-        <h1 className="title">Project</h1>
-        <div className="project-content">
+        <h1 className="title" data-aos="fade-down">
+          Project
+        </h1>
+        <div className="project-content" data-aos="fade-up">
           {project.map((data, index) => (
             <div className="project-card" key={index}>
               <img src={Telefon} className="project-image" />
