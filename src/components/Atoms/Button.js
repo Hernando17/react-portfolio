@@ -8,6 +8,8 @@ export default function ButtonOutline(props) {
       variant="outlined"
       style={{
         borderColor: "white",
+        marginRight: 8,
+        marginTop: 8,
       }}
     >
       <p style={{ color: "white" }}>{props.name}</p>
