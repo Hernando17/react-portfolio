@@ -195,6 +195,11 @@ body {
     overflow-y: hidden;
 }
 
+.about-title {
+    font-size: 42px;
+    color: white;
+}
+
 .about-container {
     padding-bottom: 10%;
 }
@@ -275,8 +280,8 @@ body {
     padding-bottom: 30%;
 
     .career-content {
-        margin-top: 32px;
         color: white;
+        margin-top: 12px;
     }
 }
 
@@ -286,6 +291,11 @@ body {
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 30%;
+
+    .project-title {
+        font-size: 42px;
+        color: white;
+    }
     .project-content {
         margin-top: 32px;
         gap: 1%;
@@ -339,7 +349,7 @@ body {
         }
     }
 
-    .title {
+    .about-title {
         text-align: center;
     }
 
@@ -406,6 +416,10 @@ body {
         justify-content: center;
     }
 
+    .about-content {
+        margin-bottom: 24px;
+    }
+
     .about-description {
         width: 100%;
         text-align: center;
@@ -428,6 +442,12 @@ body {
 
     // Project Responsive
     .project-container {
+        .project-title {
+            text-align: center;
+            font-size: 42px;
+            color: white;
+        }
+
         .project-content {
             gap: 2%;
             display: grid;

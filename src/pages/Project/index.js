@@ -17,7 +17,7 @@ export default function Project() {
         <div>
             <Navbar />
             <div className="project-container">
-                <h1 className="title" data-aos="fade-down">
+                <h1 className="project-title" data-aos="fade-down">
                     Project
                 </h1>
                 <div className="project-content" data-aos="fade-up">
