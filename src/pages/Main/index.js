@@ -7,44 +7,52 @@ import mylogo from "../../assets/img/mylogo.jpg";
 import AOS from "aos";
 
 export default function Main() {
-  let navigate = useNavigate();
-  React.useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
-  return (
-    <div>
-      <Navbar />
-      <section id="main">
-        {/* <motion.div
+    let navigate = useNavigate();
+    React.useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    }, []);
+    return (
+        <div>
+            <Navbar />
+            <section id="main">
+                {/* <motion.div
                     className="paragraph"
                     initial={{ position: "relative", y: "100%" }}
                     animate={{ position: "relative", y: "0" }}
                     exit={{ position: "relative", y: "100%" }}
                     transition={{ transition: { duration: 1 } }}
                 > */}
-        <div className="main-content">
-          <h1 className="main-title">HELLO THERE, MY NAME IS HERNANDO</h1>
-          <p style={{ marginBottom: 20, fontSize: 24 }}>Find more about me</p>
-          <ButtonOutline name="About" onClick={() => navigate("/about")} />
-        </div>
-        {/* </motion.div>
+                <div className="main-content" data-aos="fade-right">
+                    <h1 className="main-title">
+                        HELLO THERE, MY NAME IS HERNANDO
+                    </h1>
+                    <p style={{ marginBottom: 20, fontSize: 24 }}>
+                        Find more about me
+                    </p>
+                    <ButtonOutline
+                        name="About"
+                        onClick={() => navigate("/about")}
+                    />
+                </div>
+                {/* </motion.div>
                 <motion.div
                     initial={{ position: "relative", y: "-100%" }}
                     animate={{ position: "relative", y: "0" }}
                     exit={{ position: "relative", y: "-100%" }}
                     transition={{ transition: { duration: 1 } }}
                 > */}
-        <img
-          src={mylogo}
-          alt="MyPhoto.jpg"
-          className="logo"
-          style={{ borderRadius: "100px" }}
-        />
-        {/* </motion.div> */}
-      </section>
-    </div>
-  );
+                <img
+                    src={mylogo}
+                    alt="MyPhoto.jpg"
+                    className="logo"
+                    style={{ borderRadius: "100px" }}
+                    data-aos="fade-left"
+                />
+                {/* </motion.div> */}
+            </section>
+        </div>
+    );
 }

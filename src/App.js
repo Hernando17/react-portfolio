@@ -1,5 +1,6 @@
 import React from "react";
 import Router from "./routers";
+import "./assets/css/partials/welcome.scss";
 import "./assets/css/style.scss";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -9,13 +10,17 @@ function App() {
     React.useEffect(() => {
         setTimeout(() => {
             setLoading(false);
-        }, 3000);
+        }, 5000);
     });
 
     if (loading) {
         return (
             <div className="welcome">
-                <h1 style={{ color: "white" }}>WELCOME</h1>
+                <svg viewBox="0 0 1320 300">
+                    <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                        Welcome
+                    </text>
+                </svg>
             </div>
         );
     } else {
