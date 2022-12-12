@@ -32,14 +32,14 @@ export default function Main() {
           <p style={{ marginBottom: 20, fontSize: 24 }}>Find more about me</p>
 
           <ButtonOutline name="About" onClick={() => navigate("/about")} />
-          <Button
+          {/* <Button
             variant="outlined"
             style={{ borderColor: "white", marginRight: 8, marginTop: 8 }}
             href="../../../src/assets/pdf/cv.pdf"
             download
           >
             <p style={{ color: "white" }}>Download CV</p>
-          </Button>
+          </Button> */}
         </div>
         {/* </motion.div>
                 <motion.div
