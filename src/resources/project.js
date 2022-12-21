@@ -9,6 +9,7 @@ import IlogMobile from "../assets/img/project/ilogmobile.webp";
 import ASPApi from "../assets/img/project/aspapi.webp";
 import SilajuMobile from "../assets/img/project/silajumobile.webp";
 import SCS from "../assets/img/project/SCS.webp";
+import Tudu from "../assets/img/project/Tudu.webp";
 
 export const project = [
   {
@@ -210,6 +211,7 @@ export const project = [
   },
   {
     name: "tu-du",
+    img: Tudu,
     category: "Website",
     language: [
       {
