@@ -13,7 +13,7 @@ export default function Career() {
 
   const data = [
     {
-      time: "July 2022 - Dec 2022",
+      time: "July 2022 - Dec 2022 (6 Months)",
       company: "PT Mitra Kuadran Teknologi",
       position: "Full Stack Developer",
     },
