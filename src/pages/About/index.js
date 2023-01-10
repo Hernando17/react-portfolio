@@ -23,8 +23,6 @@ export default function About() {
               <p>
                 Hello, my name is Hernando. I'm born in August 25, 2004 in
                 Indonesia which mean I can speak Indonesia and little english.
-                I'm currently work as Full Stack Developer, and focus on
-                developing website and android application.
               </p>
               <p style={{ marginTop: 12 }}>
                 My hobbies are write some code, makes some digital art and play
@@ -42,19 +40,14 @@ export default function About() {
           <div className="education-container">
             <h2 style={{ color: "white" }}>Education</h2>
             <div className="education-list">
+              <h5>2022 - Present</h5>
+              <p>Universitas Internasional Batam</p>
+              <p>College</p>
+            </div>
+            <div className="education-list">
               <h5>2019 - 2022</h5>
               <p>SMK Multistudi High School</p>
               <p>Vocational High School</p>
-            </div>
-            <div className="education-list">
-              <h5>2016 - 2019</h5>
-              <p>SMP Ananda Batam</p>
-              <p>Junior High School</p>
-            </div>
-            <div className="education-list">
-              <h5>2010 - 2016</h5>
-              <p>SD Ananda Batam</p>
-              <p>Elementary School</p>
             </div>
           </div>
         </div>
@@ -63,7 +56,10 @@ export default function About() {
             <h2 style={{ color: "white" }}>Skills</h2>
             <div className="education-list">
               <h5>Programming</h5>
-              <p>PHP, Javascript, Laravel, React Js, React Native</p>
+              <p>
+                PHP, Javascript, Laravel, ReactJs, React Native, ExpressJs,
+                MySQL, PostgreSQL
+              </p>
             </div>
             <div className="education-list">
               <h5>Graphic Design</h5>
