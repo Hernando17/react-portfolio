@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #1a1a1a;
+}
+
+.container {
+  max-width: 320px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 50px);
+}
+
+.navbar {
+  display: none;
+}
+
+.tabbar {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  bottom: 0;
+  background: rgba(102, 102, 102, 0.199);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 24px 0;
+}
