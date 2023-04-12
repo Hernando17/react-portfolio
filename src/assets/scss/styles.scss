@@ -1,3 +1,5 @@
+@import "./partials/animation.scss";
+
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +8,24 @@
 
 body {
   background-color: #1a1a1a;
+  color: #fff;
+  position: relative;
   padding-bottom: 120px;
+
+  &::after {
+    position: fixed;
+    content: "";
+    top: -50%;
+    left: 0;
+    width: 800px;
+    height: 800px;
+    border-radius: 1000px;
+    background-color: rgb(129, 0, 0);
+    opacity: 60%;
+    filter: blur(200px);
+    z-index: -1;
+    animation: breathing 5s ease-out infinite normal;
+  }
 }
 
 .container {
@@ -21,23 +40,6 @@ body {
   padding-top: 72px;
 }
 
-.navbar {
-  display: none;
-}
-
-.tabbar {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  background: rgba(102, 102, 102, 0.199);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  padding: 24px 0;
-}
-
 // Landing
 .landing {
   display: flex;
@@ -45,11 +47,17 @@ body {
   align-items: center;
   justify-content: center;
 
-  &-paragraph {
-    font-size: 16px;
-    color: #fff;
+  &-name {
+    font-size: 24px;
     text-align: center;
     margin-top: 24px;
+  }
+
+  &-paragraph {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
 }
 

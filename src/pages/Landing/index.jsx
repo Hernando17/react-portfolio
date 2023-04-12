@@ -7,8 +7,9 @@ export default function Landing() {
             <div className="container">
                 <div className="landing">
                     <img src={MyLogo} className="mylogo" />
-                    <h1>Hernando</h1>
-                    <p className="landing-paragraph">Hello, my name is Hernando. I'm from Indonesia, and currently work as Programmer</p>
+                    <h1 className="landing-name">Hernando</h1>
+                    <p className="landing-paragraph">Hello, my name is Hernando. I'm a student, who currently work as a Programmer</p>
+                    <a href="#" className="button-white-outline">About me</a>
                 </div>
             </div>
         </Layout>
