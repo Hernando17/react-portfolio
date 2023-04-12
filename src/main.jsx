@@ -4,9 +4,10 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import Routers from './routers';
-import "./assets/scss/styles.scss";
+import "./assets/scss/layouts.scss";
 import "./assets/scss/components.scss";
-import "./assets/scss/utils.scss"
+import "./assets/scss/utilities.scss";
+import "./assets/scss/pages/landing.scss";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -1,4 +1,5 @@
 @import "./partials/animation.scss";
+@import "./partials/colors.scss";
 
 * {
   padding: 0;
@@ -7,8 +8,8 @@
 }
 
 body {
-  background-color: #1a1a1a;
-  color: #fff;
+  background-color: $dark;
+  color: $white;
   position: relative;
   padding-bottom: 120px;
 
@@ -29,7 +30,7 @@ body {
 }
 
 .container {
-  max-width: 320px;
+  max-width: 300px;
   width: 100%;
 }
 
@@ -38,30 +39,4 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 72px;
-}
-
-// Landing
-.landing {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  &-name {
-    font-size: 24px;
-    text-align: center;
-    margin-top: 24px;
-  }
-
-  &-paragraph {
-    font-size: 16px;
-    text-align: center;
-    margin-top: 24px;
-    margin-bottom: 24px;
-  }
-}
-
-.mylogo {
-  width: 160px;
-  border-radius: 100%;
 }

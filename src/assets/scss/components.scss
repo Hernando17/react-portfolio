@@ -1,3 +1,5 @@
+@import "./partials/colors.scss";
+
 .navbar {
   display: none;
 }
@@ -20,7 +22,6 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 320px;
     list-style: none;
 
     & li.active {
@@ -28,7 +29,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-color: #fff;
+      background-color: $white;
       padding: 12px;
       width: 12px;
       height: 12px;
@@ -37,7 +38,7 @@
 
     & a {
       text-decoration: none;
-      color: #fff;
+      color: $white;
     }
   }
 }
@@ -45,22 +46,22 @@
 .button-white-outline {
   display: flex;
   text-decoration: none;
-  color: #fff;
-  border: 1px solid #fff;
+  color: $white;
+  border: 1px solid $white;
   padding: 8px 16px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 1em;
   font-weight: 500;
   justify-content: center;
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    background: #fff;
-    color: #000;
+    background: $white;
+    color: $dark;
   }
 
   &.active {
-    background: #fff;
-    color: #000;
+    background: $white;
+    color: $dark;
   }
 }

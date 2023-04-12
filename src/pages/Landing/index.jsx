@@ -1,5 +1,6 @@
 import Layout from "../Layout"
 import { MyLogo } from "../../assets"
+import { Link } from "react-router-dom"
 
 export default function Landing() {
     return (
@@ -9,7 +10,7 @@ export default function Landing() {
                     <img src={MyLogo} className="mylogo" />
                     <h1 className="landing-name">Hernando</h1>
                     <p className="landing-paragraph">Hello, my name is Hernando. I'm a student, who currently work as a Programmer</p>
-                    <a href="#" className="button-white-outline">About me</a>
+                    <Link to="/about" className="button-white-outline full-width">About me</Link>
                 </div>
             </div>
         </Layout>
