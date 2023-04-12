@@ -5,6 +5,7 @@
 .tabbar {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -12,7 +13,33 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  padding: 24px 0;
+  padding: 20px 0;
+
+  .tabbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 320px;
+    list-style: none;
+
+    & li.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      padding: 12px;
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+    }
+
+    & a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
 }
 
 .button-white-outline {
